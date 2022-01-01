@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01579FA82780FCA800DB59CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01579FA72780FCA800DB59CF /* AppDelegate.swift */; };
+		01579FAA2780FCA800DB59CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01579FA92780FCA800DB59CF /* SceneDelegate.swift */; };
+		01579FAC2780FCA800DB59CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01579FAB2780FCA800DB59CF /* ViewController.swift */; };
+		01579FAF2780FCA800DB59CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01579FAD2780FCA800DB59CF /* Main.storyboard */; };
+		01579FB12780FCAA00DB59CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01579FB02780FCAA00DB59CF /* Assets.xcassets */; };
+		01579FB42780FCAA00DB59CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01579FB22780FCAA00DB59CF /* LaunchScreen.storyboard */; };
+		01579FBF2780FCAA00DB59CF /* Ginnee_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01579FBE2780FCAA00DB59CF /* Ginnee_AppTests.swift */; };
+		01579FC92780FCAA00DB59CF /* Ginnee_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01579FC82780FCAA00DB59CF /* Ginnee_AppUITests.swift */; };
+		01579FCB2780FCAA00DB59CF /* Ginnee_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01579FCA2780FCAA00DB59CF /* Ginnee_AppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		01579FBB2780FCAA00DB59CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01579F9C2780FCA800DB59CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01579FA32780FCA800DB59CF;
+			remoteInfo = "Ginnee App";
+		};
+		01579FC52780FCAA00DB59CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01579F9C2780FCA800DB59CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01579FA32780FCA800DB59CF;
+			remoteInfo = "Ginnee App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01579FA42780FCA800DB59CF /* Ginnee App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ginnee App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01579FA72780FCA800DB59CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		01579FA92780FCA800DB59CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		01579FAB2780FCA800DB59CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		01579FAE2780FCA800DB59CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		01579FB02780FCAA00DB59CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01579FB32780FCAA00DB59CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		01579FB52780FCAA00DB59CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01579FBA2780FCAA00DB59CF /* Ginnee AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ginnee AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01579FBE2780FCAA00DB59CF /* Ginnee_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ginnee_AppTests.swift; sourceTree = "<group>"; };
+		01579FC42780FCAA00DB59CF /* Ginnee AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ginnee AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01579FC82780FCAA00DB59CF /* Ginnee_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ginnee_AppUITests.swift; sourceTree = "<group>"; };
+		01579FCA2780FCAA00DB59CF /* Ginnee_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ginnee_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01579FA12780FCA800DB59CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01579FB72780FCAA00DB59CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01579FC12780FCAA00DB59CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01579F9B2780FCA800DB59CF = {
+			isa = PBXGroup;
+			children = (
+				01579FA62780FCA800DB59CF /* Ginnee App */,
+				01579FBD2780FCAA00DB59CF /* Ginnee AppTests */,
+				01579FC72780FCAA00DB59CF /* Ginnee AppUITests */,
+				01579FA52780FCA800DB59CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		01579FA52780FCA800DB59CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01579FA42780FCA800DB59CF /* Ginnee App.app */,
+				01579FBA2780FCAA00DB59CF /* Ginnee AppTests.xctest */,
+				01579FC42780FCAA00DB59CF /* Ginnee AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01579FA62780FCA800DB59CF /* Ginnee App */ = {
+			isa = PBXGroup;
+			children = (
+				01579FA72780FCA800DB59CF /* AppDelegate.swift */,
+				01579FA92780FCA800DB59CF /* SceneDelegate.swift */,
+				01579FAB2780FCA800DB59CF /* ViewController.swift */,
+				01579FAD2780FCA800DB59CF /* Main.storyboard */,
+				01579FB02780FCAA00DB59CF /* Assets.xcassets */,
+				01579FB22780FCAA00DB59CF /* LaunchScreen.storyboard */,
+				01579FB52780FCAA00DB59CF /* Info.plist */,
+			);
+			path = "Ginnee App";
+			sourceTree = "<group>";
+		};
+		01579FBD2780FCAA00DB59CF /* Ginnee AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				01579FBE2780FCAA00DB59CF /* Ginnee_AppTests.swift */,
+			);
+			path = "Ginnee AppTests";
+			sourceTree = "<group>";
+		};
+		01579FC72780FCAA00DB59CF /* Ginnee AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				01579FC82780FCAA00DB59CF /* Ginnee_AppUITests.swift */,
+				01579FCA2780FCAA00DB59CF /* Ginnee_AppUITestsLaunchTests.swift */,
+			);
+			path = "Ginnee AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01579FA32780FCA800DB59CF /* Ginnee App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01579FCE2780FCAA00DB59CF /* Build configuration list for PBXNativeTarget "Ginnee App" */;
+			buildPhases = (
+				01579FA02780FCA800DB59CF /* Sources */,
+				01579FA12780FCA800DB59CF /* Frameworks */,
+				01579FA22780FCA800DB59CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ginnee App";
+			productName = "Ginnee App";
+			productReference = 01579FA42780FCA800DB59CF /* Ginnee App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		01579FB92780FCAA00DB59CF /* Ginnee AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01579FD12780FCAA00DB59CF /* Build configuration list for PBXNativeTarget "Ginnee AppTests" */;
+			buildPhases = (
+				01579FB62780FCAA00DB59CF /* Sources */,
+				01579FB72780FCAA00DB59CF /* Frameworks */,
+				01579FB82780FCAA00DB59CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01579FBC2780FCAA00DB59CF /* PBXTargetDependency */,
+			);
+			name = "Ginnee AppTests";
+			productName = "Ginnee AppTests";
+			productReference = 01579FBA2780FCAA00DB59CF /* Ginnee AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		01579FC32780FCAA00DB59CF /* Ginnee AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01579FD42780FCAA00DB59CF /* Build configuration list for PBXNativeTarget "Ginnee AppUITests" */;
+			buildPhases = (
+				01579FC02780FCAA00DB59CF /* Sources */,
+				01579FC12780FCAA00DB59CF /* Frameworks */,
+				01579FC22780FCAA00DB59CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01579FC62780FCAA00DB59CF /* PBXTargetDependency */,
+			);
+			name = "Ginnee AppUITests";
+			productName = "Ginnee AppUITests";
+			productReference = 01579FC42780FCAA00DB59CF /* Ginnee AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01579F9C2780FCA800DB59CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					01579FA32780FCA800DB59CF = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					01579FB92780FCAA00DB59CF = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 01579FA32780FCA800DB59CF;
+					};
+					01579FC32780FCAA00DB59CF = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 01579FA32780FCA800DB59CF;
+					};
+				};
+			};
+			buildConfigurationList = 01579F9F2780FCA800DB59CF /* Build configuration list for PBXProject "Ginnee App" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 01579F9B2780FCA800DB59CF;
+			productRefGroup = 01579FA52780FCA800DB59CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01579FA32780FCA800DB59CF /* Ginnee App */,
+				01579FB92780FCAA00DB59CF /* Ginnee AppTests */,
+				01579FC32780FCAA00DB59CF /* Ginnee AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01579FA22780FCA800DB59CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01579FB42780FCAA00DB59CF /* LaunchScreen.storyboard in Resources */,
+				01579FB12780FCAA00DB59CF /* Assets.xcassets in Resources */,
+				01579FAF2780FCA800DB59CF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01579FB82780FCAA00DB59CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01579FC22780FCAA00DB59CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01579FA02780FCA800DB59CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01579FAC2780FCA800DB59CF /* ViewController.swift in Sources */,
+				01579FA82780FCA800DB59CF /* AppDelegate.swift in Sources */,
+				01579FAA2780FCA800DB59CF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01579FB62780FCAA00DB59CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01579FBF2780FCAA00DB59CF /* Ginnee_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01579FC02780FCAA00DB59CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01579FCB2780FCAA00DB59CF /* Ginnee_AppUITestsLaunchTests.swift in Sources */,
+				01579FC92780FCAA00DB59CF /* Ginnee_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01579FBC2780FCAA00DB59CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01579FA32780FCA800DB59CF /* Ginnee App */;
+			targetProxy = 01579FBB2780FCAA00DB59CF /* PBXContainerItemProxy */;
+		};
+		01579FC62780FCAA00DB59CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01579FA32780FCA800DB59CF /* Ginnee App */;
+			targetProxy = 01579FC52780FCAA00DB59CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		01579FAD2780FCA800DB59CF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01579FAE2780FCA800DB59CF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		01579FB22780FCAA00DB59CF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01579FB32780FCAA00DB59CF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		01579FCC2780FCAA00DB59CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		01579FCD2780FCAA00DB59CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		01579FCF2780FCAA00DB59CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KB4RSDYFD4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Ginnee App/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ginnee.app.Ginnee-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		01579FD02780FCAA00DB59CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KB4RSDYFD4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Ginnee App/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ginnee.app.Ginnee-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		01579FD22780FCAA00DB59CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KB4RSDYFD4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ginnee.app.Ginnee-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ginnee App.app/Ginnee App";
+			};
+			name = Debug;
+		};
+		01579FD32780FCAA00DB59CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KB4RSDYFD4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ginnee.app.Ginnee-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ginnee App.app/Ginnee App";
+			};
+			name = Release;
+		};
+		01579FD52780FCAA00DB59CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KB4RSDYFD4;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ginnee.app.Ginnee-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Ginnee App";
+			};
+			name = Debug;
+		};
+		01579FD62780FCAA00DB59CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KB4RSDYFD4;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ginnee.app.Ginnee-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Ginnee App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01579F9F2780FCA800DB59CF /* Build configuration list for PBXProject "Ginnee App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01579FCC2780FCAA00DB59CF /* Debug */,
+				01579FCD2780FCAA00DB59CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01579FCE2780FCAA00DB59CF /* Build configuration list for PBXNativeTarget "Ginnee App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01579FCF2780FCAA00DB59CF /* Debug */,
+				01579FD02780FCAA00DB59CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01579FD12780FCAA00DB59CF /* Build configuration list for PBXNativeTarget "Ginnee AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01579FD22780FCAA00DB59CF /* Debug */,
+				01579FD32780FCAA00DB59CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01579FD42780FCAA00DB59CF /* Build configuration list for PBXNativeTarget "Ginnee AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01579FD52780FCAA00DB59CF /* Debug */,
+				01579FD62780FCAA00DB59CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01579F9C2780FCA800DB59CF /* Project object */;
+}
