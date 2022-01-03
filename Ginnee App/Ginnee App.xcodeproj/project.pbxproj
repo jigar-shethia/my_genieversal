@@ -16,6 +16,7 @@
 		01579FBF2780FCAA00DB59CF /* Ginnee_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01579FBE2780FCAA00DB59CF /* Ginnee_AppTests.swift */; };
 		01579FC92780FCAA00DB59CF /* Ginnee_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01579FC82780FCAA00DB59CF /* Ginnee_AppUITests.swift */; };
 		01579FCB2780FCAA00DB59CF /* Ginnee_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01579FCA2780FCAA00DB59CF /* Ginnee_AppUITestsLaunchTests.swift */; };
+		01F119522783834F00D0E3D5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F119512783834F00D0E3D5 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		01579FC42780FCAA00DB59CF /* Ginnee AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ginnee AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		01579FC82780FCAA00DB59CF /* Ginnee_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ginnee_AppUITests.swift; sourceTree = "<group>"; };
 		01579FCA2780FCAA00DB59CF /* Ginnee_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ginnee_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		01F119512783834F00D0E3D5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				01579FA72780FCA800DB59CF /* AppDelegate.swift */,
 				01579FA92780FCA800DB59CF /* SceneDelegate.swift */,
 				01579FAB2780FCA800DB59CF /* ViewController.swift */,
+				01F119512783834F00D0E3D5 /* LoginViewController.swift */,
 				01579FAD2780FCA800DB59CF /* Main.storyboard */,
 				01579FB02780FCAA00DB59CF /* Assets.xcassets */,
 				01579FB22780FCAA00DB59CF /* LaunchScreen.storyboard */,
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01F119522783834F00D0E3D5 /* LoginViewController.swift in Sources */,
 				01579FAC2780FCA800DB59CF /* ViewController.swift in Sources */,
 				01579FA82780FCA800DB59CF /* AppDelegate.swift in Sources */,
 				01579FAA2780FCA800DB59CF /* SceneDelegate.swift in Sources */,
