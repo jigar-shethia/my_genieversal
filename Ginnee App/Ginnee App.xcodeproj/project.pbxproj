@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0143F2EF278A0E800068A3C5 /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 0143F2EE278A0E800068A3C5 /* FacebookCore */; };
+		0143F2F1278A0E800068A3C5 /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 0143F2F0278A0E800068A3C5 /* FacebookLogin */; };
 		015377C627876CC30035115D /* ApiConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015377C527876CC30035115D /* ApiConnection.swift */; };
 		015377C827876F800035115D /* NetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015377C727876F800035115D /* NetworkReachability.swift */; };
-		01570D212787603F007CE963 /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 01570D202787603F007CE963 /* FacebookCore */; };
-		01570D232787603F007CE963 /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 01570D222787603F007CE963 /* FacebookLogin */; };
 		01579FA82780FCA800DB59CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01579FA72780FCA800DB59CF /* AppDelegate.swift */; };
 		01579FAA2780FCA800DB59CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01579FA92780FCA800DB59CF /* SceneDelegate.swift */; };
 		01579FAF2780FCA800DB59CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01579FAD2780FCA800DB59CF /* Main.storyboard */; };
@@ -62,8 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01570D232787603F007CE963 /* FacebookLogin in Frameworks */,
-				01570D212787603F007CE963 /* FacebookCore in Frameworks */,
+				0143F2F1278A0E800068A3C5 /* FacebookLogin in Frameworks */,
+				0143F2EF278A0E800068A3C5 /* FacebookCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,8 +186,8 @@
 			);
 			name = "Ginnee App";
 			packageProductDependencies = (
-				01570D202787603F007CE963 /* FacebookCore */,
-				01570D222787603F007CE963 /* FacebookLogin */,
+				0143F2EE278A0E800068A3C5 /* FacebookCore */,
+				0143F2F0278A0E800068A3C5 /* FacebookLogin */,
 			);
 			productName = "Ginnee App";
 			productReference = 01579FA42780FCA800DB59CF /* Ginnee App.app */;
@@ -262,7 +262,7 @@
 			);
 			mainGroup = 01579F9B2780FCA800DB59CF;
 			packageReferences = (
-				01570D1F2787603F007CE963 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+				0143F2ED278A0E800068A3C5 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
 			);
 			productRefGroup = 01579FA52780FCA800DB59CF /* Products */;
 			projectDirPath = "";
@@ -681,7 +681,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		01570D1F2787603F007CE963 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+		0143F2ED278A0E800068A3C5 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
 			requirement = {
@@ -692,14 +692,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		01570D202787603F007CE963 /* FacebookCore */ = {
+		0143F2EE278A0E800068A3C5 /* FacebookCore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 01570D1F2787603F007CE963 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			package = 0143F2ED278A0E800068A3C5 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
 			productName = FacebookCore;
 		};
-		01570D222787603F007CE963 /* FacebookLogin */ = {
+		0143F2F0278A0E800068A3C5 /* FacebookLogin */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 01570D1F2787603F007CE963 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			package = 0143F2ED278A0E800068A3C5 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
 			productName = FacebookLogin;
 		};
 /* End XCSwiftPackageProductDependency section */
