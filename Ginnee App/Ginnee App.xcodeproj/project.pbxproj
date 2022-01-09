@@ -19,6 +19,7 @@
 		01579FBF2780FCAA00DB59CF /* Ginnee_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01579FBE2780FCAA00DB59CF /* Ginnee_AppTests.swift */; };
 		01579FC92780FCAA00DB59CF /* Ginnee_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01579FC82780FCAA00DB59CF /* Ginnee_AppUITests.swift */; };
 		01579FCB2780FCAA00DB59CF /* Ginnee_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01579FCA2780FCAA00DB59CF /* Ginnee_AppUITestsLaunchTests.swift */; };
+		0166DAC2278B594E0092821E /* UploadImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0166DAC1278B594E0092821E /* UploadImageViewController.swift */; };
 		01F119522783834F00D0E3D5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F119512783834F00D0E3D5 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		01579FC42780FCAA00DB59CF /* Ginnee AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ginnee AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		01579FC82780FCAA00DB59CF /* Ginnee_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ginnee_AppUITests.swift; sourceTree = "<group>"; };
 		01579FCA2780FCAA00DB59CF /* Ginnee_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ginnee_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0166DAC1278B594E0092821E /* UploadImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadImageViewController.swift; sourceTree = "<group>"; };
 		01F119512783834F00D0E3D5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				01F119512783834F00D0E3D5 /* LoginViewController.swift */,
+				0166DAC1278B594E0092821E /* UploadImageViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				01579FA82780FCA800DB59CF /* AppDelegate.swift in Sources */,
 				01579FAA2780FCA800DB59CF /* SceneDelegate.swift in Sources */,
 				015377C827876F800035115D /* NetworkReachability.swift in Sources */,
+				0166DAC2278B594E0092821E /* UploadImageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
