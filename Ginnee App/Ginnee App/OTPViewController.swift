@@ -1,26 +1,30 @@
-  //
-//  PhoneNumberViewController.swift
+//
+//  OTPViewController.swift
 //  Ginnee App
 //
-//  Created by Jigar shethia on 11/01/22.
+//  Created by Jigar on 15/01/22.
 //
 
 import UIKit
-import NKVPhonePicker
-class PhoneNumberViewController: UIViewController {
-   
-    @IBOutlet weak var phoneNumberTextView: NKVPhonePickerTextField!
+import AEOTPTextField
+
+class OTPViewController: UIViewController,AEOTPTextFieldDelegate {
     
 
+    @IBOutlet weak var otpTextField: AEOTPTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
-        phoneNumberTextView.phonePickerDelegate = self
+        otpTextField.otpDelegate = self
+        otpTextField.otpFilledBorderColor = UIColor(named: "AccentColor") ?? .darkGray
+        otpTextField.configure()
+        otpTextField.textContentType = .oneTimeCode
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
-        
-        // Do any additional setup after loading the view.
+    }
+    
+    func didUserFinishEnter(the code: String) {
+        print(code)
     }
     
 
@@ -33,14 +37,6 @@ class PhoneNumberViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
-    @IBAction func proceedClicked(_ sender: UIButton) {
-        
-        // Do valiadation
-        
-        // Send to OTP scree.
-        
-    }
     @objc func dismissKeyboard() {
         //Causes the view (or one of its embedded text fields) to resign the first responder status.
         view.endEditing(true)

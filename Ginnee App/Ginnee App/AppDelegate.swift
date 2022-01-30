@@ -8,7 +8,7 @@
 import UIKit
 import FacebookCore
 
-@main
+@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(

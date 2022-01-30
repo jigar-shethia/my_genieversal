@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import BSImagePicker
+import Photos
 
 class UploadImageViewController: UIViewController {
     
@@ -13,6 +15,7 @@ class UploadImageViewController: UIViewController {
     @IBOutlet weak var CameraUpload: UIView!
     @IBOutlet weak var FacebookUpload: UIView!
     @IBOutlet weak var QuoteText: UILabel!
+    var globalAssets = [PHAsset]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,6 +74,27 @@ class UploadImageViewController: UIViewController {
     }
     @objc func uploadImageViaCameraRoll(_ sender: UITapGestureRecognizer? = nil) {
         print("uploadImageViaCameraRoll clicked! ")
+        let imagePicker = ImagePickerController()
+        imagePicker.settings.selection.max = 6
+        imagePicker.settings.theme.selectionStyle = .numbered
+        imagePicker.settings.fetch.assets.supportedMediaTypes = [.image]
+        imagePicker.settings.selection.unselectOnReachingMax = true
+
+        let start = Date()
+        self.presentImagePicker(imagePicker, select: { (asset) in
+            print("Selected: \(asset)")
+        }, deselect: { (asset) in
+            print("Deselected: \(asset)")
+        }, cancel: { (assets) in
+            print("Canceled with selections: \(assets)")
+        }, finish: { (assets) in
+            self.globalAssets = assets
+            print("Finished with selections: \(assets)")
+        }, completion: {
+            let finish = Date()
+            print(finish.timeIntervalSince(start))
+        })
+        
         
     }
     @objc func uploadImageViaFacebook(_ sender: UITapGestureRecognizer? = nil) {
