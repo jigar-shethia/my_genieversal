@@ -28,6 +28,12 @@
 		0174832627A1CE7F0071D60D /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = 0174832527A1CE7F0071D60D /* FacebookShare */; };
 		017F3CB5279339E5004BACFE /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3CB4279339E5004BACFE /* OTPViewController.swift */; };
 		017F3CB727934707004BACFE /* EmailLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3CB627934707004BACFE /* EmailLoginViewController.swift */; };
+		01899A0C27A982C20025FB5F /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 01899A0B27A982C20025FB5F /* GoogleSignIn */; };
+		01899A0F27A985AA0025FB5F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 01899A0E27A985AA0025FB5F /* FirebaseAuth */; };
+		01899A1127A985AA0025FB5F /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 01899A1027A985AA0025FB5F /* FirebaseAuthCombine-Community */; };
+		01899A1327A986310025FB5F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01899A1227A986310025FB5F /* GoogleService-Info.plist */; };
+		01BA2D2A27A6E624005A2446 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BA2D2927A6E624005A2446 /* CollectionViewController.swift */; };
+		01BA2D2C27A6EAD4005A2446 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BA2D2B27A6EAD4005A2446 /* CollectionViewCell.swift */; };
 		01F119522783834F00D0E3D5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F119512783834F00D0E3D5 /* LoginViewController.swift */; };
 		575F0309A1001A9B36992AAA /* libPods-Ginnee App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63811FFD7A465296E3905914 /* libPods-Ginnee App.a */; };
 /* End PBXBuildFile section */
@@ -72,6 +78,9 @@
 		0166DAC1278B594E0092821E /* UploadImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadImageViewController.swift; sourceTree = "<group>"; };
 		017F3CB4279339E5004BACFE /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
 		017F3CB627934707004BACFE /* EmailLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginViewController.swift; sourceTree = "<group>"; };
+		01899A1227A986310025FB5F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		01BA2D2927A6E624005A2446 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		01BA2D2B27A6EAD4005A2446 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		01F119512783834F00D0E3D5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5AEBAC5D1D15E0C889450743 /* Pods-Ginnee App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ginnee App.release.xcconfig"; path = "Target Support Files/Pods-Ginnee App/Pods-Ginnee App.release.xcconfig"; sourceTree = "<group>"; };
 		63811FFD7A465296E3905914 /* libPods-Ginnee App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ginnee App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,9 +92,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01899A0C27A982C20025FB5F /* GoogleSignIn in Frameworks */,
+				01899A0F27A985AA0025FB5F /* FirebaseAuth in Frameworks */,
 				0174832227A1CE7F0071D60D /* FacebookCore in Frameworks */,
 				0174832627A1CE7F0071D60D /* FacebookShare in Frameworks */,
 				0174832427A1CE7F0071D60D /* FacebookLogin in Frameworks */,
+				01899A1127A985AA0025FB5F /* FirebaseAuthCombine-Community in Frameworks */,
 				575F0309A1001A9B36992AAA /* libPods-Ginnee App.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,6 +145,8 @@
 				017F3CB4279339E5004BACFE /* OTPViewController.swift */,
 				017F3CB627934707004BACFE /* EmailLoginViewController.swift */,
 				01615E66279F1DF8005658BE /* UploadPreviewViewController.swift */,
+				01BA2D2927A6E624005A2446 /* CollectionViewController.swift */,
+				01BA2D2B27A6EAD4005A2446 /* CollectionViewCell.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -180,6 +194,7 @@
 		01579FA62780FCA800DB59CF /* Ginnee App */ = {
 			isa = PBXGroup;
 			children = (
+				01899A1227A986310025FB5F /* GoogleService-Info.plist */,
 				01579FA72780FCA800DB59CF /* AppDelegate.swift */,
 				01579FA92780FCA800DB59CF /* SceneDelegate.swift */,
 				013028DC279B5098004FB080 /* Helper */,
@@ -249,6 +264,9 @@
 				0174832127A1CE7F0071D60D /* FacebookCore */,
 				0174832327A1CE7F0071D60D /* FacebookLogin */,
 				0174832527A1CE7F0071D60D /* FacebookShare */,
+				01899A0B27A982C20025FB5F /* GoogleSignIn */,
+				01899A0E27A985AA0025FB5F /* FirebaseAuth */,
+				01899A1027A985AA0025FB5F /* FirebaseAuthCombine-Community */,
 			);
 			productName = "Ginnee App";
 			productReference = 01579FA42780FCA800DB59CF /* Ginnee App.app */;
@@ -324,6 +342,8 @@
 			mainGroup = 01579F9B2780FCA800DB59CF;
 			packageReferences = (
 				0174832027A1CE7F0071D60D /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+				01899A0A27A982C20025FB5F /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				01899A0D27A985A90025FB5F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 01579FA52780FCA800DB59CF /* Products */;
 			projectDirPath = "";
@@ -342,6 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01579FB42780FCAA00DB59CF /* LaunchScreen.storyboard in Resources */,
+				01899A1327A986310025FB5F /* GoogleService-Info.plist in Resources */,
 				01579FB12780FCAA00DB59CF /* Assets.xcassets in Resources */,
 				01579FAF2780FCA800DB59CF /* Main.storyboard in Resources */,
 			);
@@ -414,6 +435,8 @@
 				0110493B27975B3B00CFE6D2 /* Constants.swift in Sources */,
 				01F119522783834F00D0E3D5 /* LoginViewController.swift in Sources */,
 				01579FA82780FCA800DB59CF /* AppDelegate.swift in Sources */,
+				01BA2D2A27A6E624005A2446 /* CollectionViewController.swift in Sources */,
+				01BA2D2C27A6EAD4005A2446 /* CollectionViewCell.swift in Sources */,
 				01579FAA2780FCA800DB59CF /* SceneDelegate.swift in Sources */,
 				017F3CB5279339E5004BACFE /* OTPViewController.swift in Sources */,
 				01563C21278E02C30047DCF3 /* PhoneNumberViewController.swift in Sources */,
@@ -810,6 +833,22 @@
 				kind = branch;
 			};
 		};
+		01899A0A27A982C20025FB5F /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		01899A0D27A985A90025FB5F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -827,6 +866,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0174832027A1CE7F0071D60D /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
 			productName = FacebookShare;
+		};
+		01899A0B27A982C20025FB5F /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01899A0A27A982C20025FB5F /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		01899A0E27A985AA0025FB5F /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01899A0D27A985A90025FB5F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		01899A1027A985AA0025FB5F /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01899A0D27A985A90025FB5F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

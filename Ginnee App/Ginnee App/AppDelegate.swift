@@ -7,9 +7,14 @@
 
 import UIKit
 import FacebookCore
+import Firebase
+import GoogleSignIn
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    var window: UIWindow?
     
     func application(
             _ app: UIApplication,
@@ -31,6 +36,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                   application,
                   didFinishLaunchingWithOptions: launchOptions
               )
+        FirebaseApp.configure()
+        GIDSignIn.sharedInstance.clientID = "176288681458-g7cslcneetbc8jge159cvau9v7ot682b.apps.googleusercontent.com"
         return true
     }
 
