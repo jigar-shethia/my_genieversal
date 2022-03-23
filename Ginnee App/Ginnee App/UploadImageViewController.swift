@@ -89,7 +89,18 @@ class UploadImageViewController: UIViewController {
             print("Canceled with selections: \(assets)")
         }, finish: { (assets) in
             self.globalAssets = assets
-            print("Finished with selections: \(assets)")
+            DispatchQueue.main.async{
+          
+               
+            print("UIStoryboard 112")
+            let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "BirthdayPickerViewController") as? BirthdayPickerViewController
+            self.navigationController?.pushViewController(vc!, animated: true)
+    
+            
+            }
+
+            print("Finished with 232 selections: \(assets)")
+                        
         }, completion: {
             let finish = Date()
             print(finish.timeIntervalSince(start))

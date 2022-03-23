@@ -17,7 +17,7 @@ public enum HTTPMethod : String {
 
 internal typealias Parameters = [String:Any];
 internal protocol ParameterEncoder {
-    static func encode(urlRequest: inout URLRequest, with parameters: Parameters) throws
+    static func encode(urlRequest: inout URLRequest, with parameters: Parameters, Authorization authorization:String) throws
 }
 
 internal protocol EndPointType {
@@ -36,15 +36,17 @@ internal struct API:EndPointType {
     public var parameters: Parameters?
     public var path: String
     public var httpMethod: HTTPMethod
+    public var authorization:String
     
     
-    init(baseUrl:String ,path:String , httpMethod:HTTPMethod ,parameters: Parameters?)
+    init(baseUrl:String ,path:String , httpMethod:HTTPMethod ,parameters: Parameters?, authorization:String)
      {
         
         self.baseURL = baseUrl
         self.path = path
         self.httpMethod = httpMethod
         self.parameters = parameters
+        self.authorization = authorization
         
      }
         
@@ -81,7 +83,7 @@ internal struct API:EndPointType {
                 
                 do
                 {
-                    try JSONParameterEncoder.encode(urlRequest: &request!, with: param);
+                    try JSONParameterEncoder.encode(urlRequest: &request!, with: param, Authorization:authorization);
                     
                 } catch  {
                     print(error);
@@ -97,7 +99,7 @@ internal struct API:EndPointType {
     
 internal struct JSONParameterEncoder:ParameterEncoder {
     
-    public static func encode(urlRequest: inout URLRequest, with parameters: Parameters) throws {
+    public static func encode(urlRequest: inout URLRequest, with parameters: Parameters,Authorization authorization:String) throws {
      
         do {
             let jsonAsData = try JSONSerialization.data(withJSONObject: parameters, options: []);
@@ -105,6 +107,11 @@ internal struct JSONParameterEncoder:ParameterEncoder {
             if urlRequest.value(forHTTPHeaderField: "Content-Type") == nil {
                 urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
                 urlRequest.setValue("application/json", forHTTPHeaderField: "Accept");
+                if authorization != ""
+                {
+                    urlRequest.setValue("Bearer \(authorization)", forHTTPHeaderField: "Authorization");
+                }
+               
             }
         } catch  {
             throw error;

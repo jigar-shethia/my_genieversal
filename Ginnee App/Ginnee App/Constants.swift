@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 internal enum UrlType {
     case baseURL
@@ -22,7 +23,8 @@ internal enum Constants {
     case forgotPassword
     case resetPassword
     case resendVerificationCode
-    
+    case loginWithGoogle
+    case authenticateUser
  
     
     var value:String
@@ -31,9 +33,11 @@ internal enum Constants {
         case .baseURL: return "http://3.6.142.35/v1/api/"
         case .registerUser: return "auth/register"
         case .loginWithEmail: return "auth/login"
+        case .loginWithGoogle: return"/auth/google"
         case .forgotPassword: return "password/forgot"
         case .resetPassword: return"password/reset"
         case .resendVerificationCode: return "verify/resend"
+        case .authenticateUser: return "auth"
         }
    
         
@@ -44,6 +48,7 @@ internal enum Constants {
         static let name = "name";
         static let password = "password";
         static let token = "token";
+        static let authorization = "Authorization";
         
     }
  

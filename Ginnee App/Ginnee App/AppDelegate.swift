@@ -7,9 +7,7 @@
 
 import UIKit
 import FacebookCore
-import Firebase
 import GoogleSignIn
-
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,12 +19,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             open url: URL,
             options: [UIApplication.OpenURLOptionsKey : Any] = [:]
         ) -> Bool {
+            var handled: Bool
+
+             handled = GIDSignIn.sharedInstance.handle(url)
+             if handled {
+               return true
+             }
+
+             // Handle other custom URL types.
+
+             // If not handled by this app, return false.
+            
             ApplicationDelegate.shared.application(
                 app,
                 open: url,
                 sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
                 annotation: options[UIApplication.OpenURLOptionsKey.annotation]
             )
+            return false
         }
 
 
@@ -36,8 +46,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                   application,
                   didFinishLaunchingWithOptions: launchOptions
               )
-        FirebaseApp.configure()
-        GIDSignIn.sharedInstance.clientID = "176288681458-g7cslcneetbc8jge159cvau9v7ot682b.apps.googleusercontent.com"
+        GIDSignIn.sharedInstance.restorePreviousSignIn { user, error in
+            if error != nil || user == nil {
+              // Show the app's signed-out state.
+            } else {
+                print("Login success 1123132")
+              // Show the app's signed-in state.
+            }
+          }
+        
         return true
     }
 

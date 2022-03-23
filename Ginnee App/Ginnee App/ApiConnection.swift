@@ -15,6 +15,48 @@ class ApiConnection: NSObject {
     {
         
     }
+    
+    public func loginWithGoogle(Token token:String ,completionHandler:@escaping Response)
+    {
+        var parameters:[String:Any] = [:];
+        parameters.updateValue(token, forKey: Constants.Params.token)
+        
+        let apiRequest = API(baseUrl: Constants.baseURL.value, path: Constants.loginWithGoogle.value, httpMethod: .post, parameters: parameters, authorization:"").buildRequest
+        
+        performRequest(with: apiRequest) { data, error in
+            if let safeData=data
+            {
+                let decoder = JSONDecoder()
+                do{
+                    let decodedData = try  decoder.decode(LoginData.self, from: safeData)
+                    let message = decodedData.message
+//                    let error = decodedData.error
+                    let results = decodedData.results
+                    let code  = decodedData.code
+                    print("message \(message)")
+                    print("error \(error)")
+                        print("results \(results.token)")
+                    print("code \(code)")
+//                    if(error == false)
+//                    {
+//                        self.authenticateUser(token:results.token) { data, error in
+//
+//                               completionHandler(data, error)
+//                         }
+                        completionHandler(data, error)
+//                    }
+                }
+                catch
+                {
+                 print(error)
+                }
+            
+            }
+            completionHandler(data, error)
+            
+          }
+        
+    }
     public func loginWithEmail(Email email:String ,Password password:String,  completionHandler:@escaping Response)
     {
         print("loginWithEmail 11")
@@ -26,17 +68,61 @@ class ApiConnection: NSObject {
         print("path \( Constants.loginWithEmail.value)")
         print("parameters \(parameters)")
         
-        let apiRequest = API(baseUrl: Constants.baseURL.value, path: Constants.loginWithEmail.value, httpMethod: .post, parameters: parameters).buildRequest
+        let apiRequest = API(baseUrl: Constants.baseURL.value, path: Constants.loginWithEmail.value, httpMethod: .post, parameters: parameters, authorization:"").buildRequest
         
         performRequest(with: apiRequest) { data, error in
+            print("Data 2323 \(String(describing: data))")
+            if let safeData=data
+            {
+                let decoder = JSONDecoder()
+                do{
+                    let decodedData = try  decoder.decode(LoginData.self, from: safeData)
+                    let message = decodedData.message
+                    let error = decodedData.error
+                    let results = decodedData.results
+                    let code  = decodedData.code
+                    print("message \(message)")
+                    print("error \(error)")
+                        print("results \(results.token)")
+                    print("code \(code)")
+                    if(error == false)
+                    {
+                        self.authenticateUser(token:results.token) { data, error in
+                                   
+                               completionHandler(data, error)
+                         }
+                  
+                    }
+                }
+                catch
+                {
+                 print(error)
+                }
             
-            completionHandler(data, error)
+            }
+            
+
+
         }
         
         
         
         
     }
+    internal func authenticateUser(token:String, completionHandler:@escaping Response)
+    {
+        
+        var parameters:[String:Any] = [:];
+        parameters.updateValue(token, forKey: Constants.Params.email)
+        let apiRequest = API(baseUrl: Constants.baseURL.value, path: Constants.authenticateUser.value, httpMethod: .get, parameters: nil, authorization:token).buildRequest
+        
+        performRequest(with: apiRequest) { data, error in
+            
+            completionHandler(data, error)
+            
+          }
+    }
+    
     func forgotPassword(email:String)
     {
         
