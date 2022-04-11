@@ -10,6 +10,7 @@ import Foundation
 class ApiConnection: NSObject {
     
     public typealias Response = (_ data:Data? ,_ error:Error?) -> Void;
+    public typealias ResponseData = (_ data:[QuestionMedata]? ,_ error:Error?) -> Void;
     
     public func registerUer(name:String, email:String, password:String)
     {
@@ -164,6 +165,42 @@ class ApiConnection: NSObject {
         task.resume()
         
     }
+    func getQuestions(completionHandler:@escaping ResponseData)
+    {
+        let apiRequest = API(baseUrl: Constants.baseURL.value, path: Constants.questions.value, httpMethod: .get, parameters: nil, authorization:"").buildRequest
+        
+        performRequest(with: apiRequest) { data, error in
+            print("Data 2323 \(String(describing: data))")
+            if let safeData=data
+            {
+                let decoder = JSONDecoder()
+                do{
+                    let decodedData = try  decoder.decode(QuestionData.self, from: safeData)
+                    let message = decodedData.message
+                    let resultArray = decodedData.results
+                    let errorData = decodedData.error
+                    if(errorData == false)
+                    {
+                        completionHandler(resultArray, error)
+                    }
+                    
+                    
+                    
+        
+                }
+                catch
+                {
+                 print(error)
+                }
+            
+            }
+            
+
+
+        }
+        
+    }
+    
     
     
     

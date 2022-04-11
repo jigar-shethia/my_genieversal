@@ -26,16 +26,22 @@
 		017F3CB5279339E5004BACFE /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3CB4279339E5004BACFE /* OTPViewController.swift */; };
 		017F3CB727934707004BACFE /* EmailLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3CB627934707004BACFE /* EmailLoginViewController.swift */; };
 		01899A1327A986310025FB5F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01899A1227A986310025FB5F /* GoogleService-Info.plist */; };
-		01BA2D2A27A6E624005A2446 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BA2D2927A6E624005A2446 /* CollectionViewController.swift */; };
-		01BA2D2C27A6EAD4005A2446 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BA2D2B27A6EAD4005A2446 /* CollectionViewCell.swift */; };
 		01F119522783834F00D0E3D5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F119512783834F00D0E3D5 /* LoginViewController.swift */; };
 		575F0309A1001A9B36992AAA /* libPods-Ginnee App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63811FFD7A465296E3905914 /* libPods-Ginnee App.a */; };
 		840DBEAC27B55E6200F95B5A /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 840DBEAB27B55E6200F95B5A /* FacebookCore */; };
 		840DBEAE27B55E6200F95B5A /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 840DBEAD27B55E6200F95B5A /* FacebookLogin */; };
 		840DBEB027B55E6200F95B5A /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = 840DBEAF27B55E6200F95B5A /* FacebookShare */; };
 		84728A2027B194DA00EA3D77 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 84728A1F27B194DA00EA3D77 /* GoogleSignIn */; };
+		8478722C27EF63D300814A1F /* TagsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478722B27EF63D300814A1F /* TagsViewController.swift */; };
+		8478722E27EF866D00814A1F /* QuestionsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478722D27EF866D00814A1F /* QuestionsData.swift */; };
 		8481A0B927BFF11000370CAB /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8481A0B827BFF11000370CAB /* AboutMeViewController.swift */; };
+		8481A88027EF54F800C0479B /* WiteyourStroyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8481A87F27EF54F800C0479B /* WiteyourStroyViewController.swift */; };
+		84A3D8E727ECE816006F6615 /* QnATableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3D8E527ECE816006F6615 /* QnATableViewCell.swift */; };
+		84A3D8E827ECE816006F6615 /* QnATableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A3D8E627ECE816006F6615 /* QnATableViewCell.xib */; };
 		84BD681B27B83038002C79BE /* BirthdayPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BD681A27B83038002C79BE /* BirthdayPickerViewController.swift */; };
+		84D21BCC27EF0E0C00A20934 /* QnAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D21BCB27EF0E0C00A20934 /* QnAViewController.swift */; };
+		84D6983F27F3888200017B70 /* ImageFliterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D6983E27F3888200017B70 /* ImageFliterViewController.swift */; };
+		84D6984127F38D5400017B70 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D6984027F38D5400017B70 /* ImageCollectionViewCell.swift */; };
 		84E5AEF627C7D9F9006431E2 /* LoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E5AEF527C7D9F9006431E2 /* LoginData.swift */; };
 		84F4A2BE27DF73A500A1782A /* AppleDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F4A2BD27DF73A500A1782A /* AppleDetails.swift */; };
 /* End PBXBuildFile section */
@@ -81,14 +87,20 @@
 		017F3CB4279339E5004BACFE /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
 		017F3CB627934707004BACFE /* EmailLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginViewController.swift; sourceTree = "<group>"; };
 		01899A1227A986310025FB5F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		01BA2D2927A6E624005A2446 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
-		01BA2D2B27A6EAD4005A2446 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		01F119512783834F00D0E3D5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5AEBAC5D1D15E0C889450743 /* Pods-Ginnee App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ginnee App.release.xcconfig"; path = "Target Support Files/Pods-Ginnee App/Pods-Ginnee App.release.xcconfig"; sourceTree = "<group>"; };
 		63811FFD7A465296E3905914 /* libPods-Ginnee App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ginnee App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		843DE42127DBD520001D603F /* Ginnee App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Ginnee App.entitlements"; sourceTree = "<group>"; };
+		8478722B27EF63D300814A1F /* TagsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsViewController.swift; sourceTree = "<group>"; };
+		8478722D27EF866D00814A1F /* QuestionsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsData.swift; sourceTree = "<group>"; };
 		8481A0B827BFF11000370CAB /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
+		8481A87F27EF54F800C0479B /* WiteyourStroyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiteyourStroyViewController.swift; sourceTree = "<group>"; };
+		84A3D8E527ECE816006F6615 /* QnATableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QnATableViewCell.swift; sourceTree = "<group>"; };
+		84A3D8E627ECE816006F6615 /* QnATableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QnATableViewCell.xib; sourceTree = "<group>"; };
 		84BD681A27B83038002C79BE /* BirthdayPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayPickerViewController.swift; sourceTree = "<group>"; };
+		84D21BCB27EF0E0C00A20934 /* QnAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QnAViewController.swift; sourceTree = "<group>"; };
+		84D6983E27F3888200017B70 /* ImageFliterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFliterViewController.swift; sourceTree = "<group>"; };
+		84D6984027F38D5400017B70 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		84E5AEF527C7D9F9006431E2 /* LoginData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginData.swift; sourceTree = "<group>"; };
 		84F4A2BD27DF73A500A1782A /* AppleDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleDetails.swift; sourceTree = "<group>"; };
 		C1957E846A0300234C372A7D /* Pods-Ginnee App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ginnee App.debug.xcconfig"; path = "Target Support Files/Pods-Ginnee App/Pods-Ginnee App.debug.xcconfig"; sourceTree = "<group>"; };
@@ -137,6 +149,8 @@
 			children = (
 				01579FB22780FCAA00DB59CF /* LaunchScreen.storyboard */,
 				01579FAD2780FCA800DB59CF /* Main.storyboard */,
+				84A3D8E927ECE826006F6615 /* QnACell */,
+				84D6984027F38D5400017B70 /* ImageCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -150,10 +164,12 @@
 				017F3CB4279339E5004BACFE /* OTPViewController.swift */,
 				017F3CB627934707004BACFE /* EmailLoginViewController.swift */,
 				01615E66279F1DF8005658BE /* UploadPreviewViewController.swift */,
-				01BA2D2927A6E624005A2446 /* CollectionViewController.swift */,
-				01BA2D2B27A6EAD4005A2446 /* CollectionViewCell.swift */,
 				84BD681A27B83038002C79BE /* BirthdayPickerViewController.swift */,
 				8481A0B827BFF11000370CAB /* AboutMeViewController.swift */,
+				84D21BCB27EF0E0C00A20934 /* QnAViewController.swift */,
+				8481A87F27EF54F800C0479B /* WiteyourStroyViewController.swift */,
+				8478722B27EF63D300814A1F /* TagsViewController.swift */,
+				84D6983E27F3888200017B70 /* ImageFliterViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -243,11 +259,21 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		84A3D8E927ECE826006F6615 /* QnACell */ = {
+			isa = PBXGroup;
+			children = (
+				84A3D8E527ECE816006F6615 /* QnATableViewCell.swift */,
+				84A3D8E627ECE816006F6615 /* QnATableViewCell.xib */,
+			);
+			path = QnACell;
+			sourceTree = "<group>";
+		};
 		84E5AEF227C7D965006431E2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				84E5AEF527C7D9F9006431E2 /* LoginData.swift */,
 				84F4A2BD27DF73A500A1782A /* AppleDetails.swift */,
+				8478722D27EF866D00814A1F /* QuestionsData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -369,6 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01579FB42780FCAA00DB59CF /* LaunchScreen.storyboard in Resources */,
+				84A3D8E827ECE816006F6615 /* QnATableViewCell.xib in Resources */,
 				01899A1327A986310025FB5F /* GoogleService-Info.plist in Resources */,
 				01579FB12780FCAA00DB59CF /* Assets.xcassets in Resources */,
 				01579FAF2780FCA800DB59CF /* Main.storyboard in Resources */,
@@ -438,24 +465,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A3D8E727ECE816006F6615 /* QnATableViewCell.swift in Sources */,
 				84F4A2BE27DF73A500A1782A /* AppleDetails.swift in Sources */,
 				015377C627876CC30035115D /* ApiConnection.swift in Sources */,
 				0110493B27975B3B00CFE6D2 /* Constants.swift in Sources */,
+				8481A88027EF54F800C0479B /* WiteyourStroyViewController.swift in Sources */,
 				01F119522783834F00D0E3D5 /* LoginViewController.swift in Sources */,
+				8478722C27EF63D300814A1F /* TagsViewController.swift in Sources */,
 				01579FA82780FCA800DB59CF /* AppDelegate.swift in Sources */,
-				01BA2D2A27A6E624005A2446 /* CollectionViewController.swift in Sources */,
 				84BD681B27B83038002C79BE /* BirthdayPickerViewController.swift in Sources */,
-				01BA2D2C27A6EAD4005A2446 /* CollectionViewCell.swift in Sources */,
 				01579FAA2780FCA800DB59CF /* SceneDelegate.swift in Sources */,
 				8481A0B927BFF11000370CAB /* AboutMeViewController.swift in Sources */,
+				84D6983F27F3888200017B70 /* ImageFliterViewController.swift in Sources */,
 				017F3CB5279339E5004BACFE /* OTPViewController.swift in Sources */,
 				01563C21278E02C30047DCF3 /* PhoneNumberViewController.swift in Sources */,
 				84E5AEF627C7D9F9006431E2 /* LoginData.swift in Sources */,
 				015377C827876F800035115D /* NetworkReachability.swift in Sources */,
 				013028DE279B50B9004FB080 /* Extentions.swift in Sources */,
 				01615E67279F1DF8005658BE /* UploadPreviewViewController.swift in Sources */,
+				84D6984127F38D5400017B70 /* ImageCollectionViewCell.swift in Sources */,
+				8478722E27EF866D00814A1F /* QuestionsData.swift in Sources */,
 				017F3CB727934707004BACFE /* EmailLoginViewController.swift in Sources */,
 				011049392797518900CFE6D2 /* EndPointType.swift in Sources */,
+				84D21BCC27EF0E0C00A20934 /* QnAViewController.swift in Sources */,
 				0166DAC2278B594E0092821E /* UploadImageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

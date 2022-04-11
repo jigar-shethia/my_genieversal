@@ -181,7 +181,13 @@ let signInConfig = GIDConfiguration.init(clientID: "176288681458-g7cslcneetbc8jg
     }
     @objc func emailLoginClicked(_ sender: UITapGestureRecognizer? = nil) {
         print("emailLoginClicked clicked! ")
-        let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "emailLogin") as? EmailLoginViewController
+//        let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "emailLogin") as? EmailLoginViewController
+//        self.navigationController?.pushViewController(vc!, animated: true)
+        
+//        let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "AboutMeViewController") as? AboutMeViewController
+//        self.navigationController?.pushViewController(vc!, animated: true)
+        
+        let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "BirthdayPickerViewController") as? BirthdayPickerViewController
         self.navigationController?.pushViewController(vc!, animated: true)
         
     }

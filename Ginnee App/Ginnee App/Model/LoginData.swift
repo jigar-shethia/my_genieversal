@@ -6,7 +6,7 @@
 //
 
 import Foundation
-struct LoginData:Decodable {
+struct LoginData:Codable {
     
     let message:String
     let error:Bool
@@ -14,7 +14,7 @@ struct LoginData:Decodable {
     let results:Results
     
 }
-struct Results:Decodable {
+struct Results:Codable {
 
     let token:String
 

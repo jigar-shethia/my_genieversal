@@ -25,6 +25,7 @@ internal enum Constants {
     case resendVerificationCode
     case loginWithGoogle
     case authenticateUser
+    case questions
  
     
     var value:String
@@ -38,6 +39,7 @@ internal enum Constants {
         case .resetPassword: return"password/reset"
         case .resendVerificationCode: return "verify/resend"
         case .authenticateUser: return "auth"
+        case .questions: return "profile/get_to_know_questions"
         }
    
         
